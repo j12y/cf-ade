@@ -1,8 +1,6 @@
 FROM j12y/cf-ade
 MAINTAINER Jayson DeLancey <jayson.delancey@ge.com>
 
-ENV HOME /root
-
 # Install some Ubuntu dependencies
 RUN apt-get update && apt-get install -y \
     python-pip \
@@ -14,5 +12,3 @@ COPY requirements.txt /tmp
 RUN pip install --upgrade pip
 RUN pip install --requirement /tmp/requirements.txt
 
-WORKDIR /root
-ENTRYPOINT ["bash"]

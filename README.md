@@ -31,7 +31,7 @@ https://docs.docker.com/engine/installation/
 You can pull one of my pre-built images by running:
 
 ```
-docker run --rm --volume=$(pwd):/root -it j12y/cf-ade
+docker run --rm --volume=$(pwd):/home/app -it j12y/cf-ade
 ```
 
 If you prefer or need to customize you can also fork or clone this repos and

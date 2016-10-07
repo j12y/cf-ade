@@ -15,5 +15,5 @@ RUN wget -O cf-cli.deb "https://cli.run.pivotal.io/stable?release=debian64&sourc
 # Install Cloud Foundry UAAC
 RUN gem install cf-uaac
 
-WORKDIR /root
+WORKDIR /home/app
 ENTRYPOINT ["bash"]
